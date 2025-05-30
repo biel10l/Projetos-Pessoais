@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Seções com fundo roxo e rosa */
+.intro,
+.section {
+  min-height: 100vh;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: linear-gradient(to right, #7F00FF, #E100FF);
+  color: white;
+  text-align: center;
+}
+
+/* Garantir contraste em textos e formulários */
+.section h2,
+.section p,
+.section label,
+.section input,
+.section textarea,
+.section button,
+.section ul,
+.section li {
+  color: white;
+}
+
+form .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #fff;
+  color: white;
+}
+
+form .form-control::placeholder {
+  color: #ddd;
+}
+
+form .btn-primary {
+  background-color: white;
+  color: #7F00FF;
+  border: none;
+}
+
+form .btn-primary:hover {
+  background-color: #f1f1f1;
+}
+
+/* Carrossel de parceiros */
+.carousel-inner img {
+  max-height: 200px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.carousel-item h5 {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.avatar-container {
+  width: 220px;                /* Aumentado */
+  height: 220px;               /* Aumentado */
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 4px solid white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.avatar-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 30% 20%; /* puxa para a esquerda e sobe levemente */
+}
+
+
+
+/* Ícones de redes sociais */
+.contact-icons a {
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin: 8px;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  flex-shrink: 0;
+}
+
+/* Rodapé */
+footer {
+  background-color: #222;
+  color: #ccc;
+  padding: 20px 0;
+  text-align: center;
+}
